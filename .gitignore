@@ -37,3 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+/src/assets/league_logo/140x130
+/src/assets/league_logo/original
