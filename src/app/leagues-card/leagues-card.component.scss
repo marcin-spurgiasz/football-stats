@@ -1,0 +1,67 @@
+@import "_colors";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:100,400,900');
+
+.main-league {
+  //height: 30vh;
+  //width: 100vw;
+  background: #f6f7f8;
+  //margin-bottom: 3rem;
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 4rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 7px grey;
+    text-transform: uppercase;
+    color: $footer-color;
+    width: 100%;
+  }
+}
+
+.league__items {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.league__item1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 18rem;
+  width: 90%;
+  margin: 0.5rem 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  .league__items {
+    flex-direction: row;
+  }
+  .league__item1 {
+    width: 40%;
+  }
+
+  .main-league {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .league__item1 {
+    width: 20%;
+  }
+
+  .main-league {
+    padding: 0 6rem;
+  }
+}
+
+
+

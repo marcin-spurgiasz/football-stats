@@ -1,0 +1,75 @@
+@import "_colors";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:100,400,900');
+
+.league__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 18rem;
+  width: 100%;
+  margin: 0.5rem 0.5rem;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: $navigate-link-hover;
+  }
+  //a:hover,
+  //a:active{
+  //  color: $navigate-link-hover;
+  //  border-color: $navigate-link-hover;
+  //}
+  img {
+    opacity: 0.3;
+    transition: .5s ease;
+    width: 100%;
+  }
+  h2 {
+    margin: 0;
+    text-align: center;
+    //border-top: 1px solid $navigate-link-hover;
+    padding-top: 1rem;
+  }
+  &:hover img {
+    opacity: 1;
+  }
+  &:hover .league__item--overlay {
+    height: 20%;
+  }
+}
+
+.league__item--overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+//
+//@media (min-width: 40rem) {
+//  .league__items {
+//    flex-direction: row;
+//  }
+//  .league__item {
+//    width: 40%;
+//  }
+//}
+//
+//@media (min-width: 60rem) {
+//  .league__item {
+//    width: 60%;
+//  }
+//}
+
+
+

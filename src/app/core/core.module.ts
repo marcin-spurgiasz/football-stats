@@ -1,20 +1,22 @@
 import {NgModule} from '@angular/core';
 import {HomeComponent} from './home/home.component';
-import {AppRoutingModule} from '../app-routing.module';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
+import {CoreRoutingModule} from './core-routing.module';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
-    AppRoutingModule
+    CoreRoutingModule,
+    // LeaguesModule,
+    // AppRoutingModule
   ],
   exports: [
-    AppRoutingModule,
+    // AppRoutingModule,
     HeaderComponent,
     FooterComponent
   ]
